@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".feature.signal.HvacFragment">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_ac_title"
+                style="@style/TitleText"
+                android:text="@string/signal_ac_function"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_ac_onoff"
+                style="@style/BlueButton"
+                android:layout_marginTop="20dp"
+                android:text="@string/signal_ac_onoff"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_ac_title" />
+
+            <Button
+                android:id="@+id/btn_ac_cold"
+                style="@style/BlueButton"
+                android:text="@string/signal_ac_cold"
+                app:layout_constraintTop_toTopOf="@id/btn_ac_onoff"
+                app:layout_constraintBottom_toBottomOf="@id/btn_ac_onoff"
+                app:layout_constraintStart_toEndOf="@id/btn_ac_onoff"
+                android:layout_marginStart="20dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</LinearLayout>

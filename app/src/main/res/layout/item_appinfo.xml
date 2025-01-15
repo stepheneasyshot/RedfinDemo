@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/csl_bg_appinfoitem"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/iv_appicon"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_app" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/iv_appicon"
+        app:layout_constraintStart_toEndOf="@id/iv_appicon"
+        app:layout_constraintTop_toTopOf="@id/iv_appicon">
+
+        <TextView
+            android:id="@+id/tv_labelandversion"
+            style="@style/ItemText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:text="RedfinDemo" />
+
+        <TextView
+            android:id="@+id/tv_appversion"
+            style="@style/ItemText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:textSize="18sp"
+            tools:text="1.4" />
+
+        <TextView
+            android:id="@+id/tv_issystem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:paddingVertical="2dp"
+            android:paddingHorizontal="6dp"
+            android:background="@drawable/bg_graybutton"
+            android:text="@string/app_systemapp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

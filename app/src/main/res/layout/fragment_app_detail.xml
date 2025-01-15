@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/devider"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_labelandversion"
+        style="@style/TitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="RedfinDemo" />
+
+    <LinearLayout
+        android:id="@+id/ll_app_debugbtns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/tv_labelandversion"
+        app:layout_constraintTop_toBottomOf="@id/tv_labelandversion">
+
+        <Button
+            android:id="@+id/btn_openapp"
+            style="@style/BlueButton"
+            android:text="@string/app_openapp" />
+
+        <Button
+            android:id="@+id/btn_killprocess"
+            style="@style/BlueButton"
+            android:layout_marginStart="20dp"
+            android:text="@string/app_killprocess" />
+
+        <Button
+            android:id="@+id/btn_uninstall"
+            style="@style/BlueButton"
+            android:layout_marginStart="20dp"
+            android:text="@string/app_uninstall" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_appdetailinfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_labelandversion"
+        app:layout_constraintTop_toBottomOf="@id/ll_app_debugbtns" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

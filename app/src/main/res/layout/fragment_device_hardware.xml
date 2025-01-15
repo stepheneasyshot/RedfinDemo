@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_device_baseinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_spakerstatus"
+                style="@style/DrawableText"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_speaker"
+                app:drawableStartCompat="@drawable/ic_speaker" />
+
+            <TextView
+                android:id="@+id/tv_camerastatus"
+                style="@style/DrawableText"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_camera"
+                app:drawableStartCompat="@drawable/ic_camera" />
+
+            <TextView
+                android:id="@+id/tv_carpowerstatus"
+                style="@style/DrawableText"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_power"
+                app:drawableStartCompat="@drawable/ic_carpower" />
+
+            <TextView
+                android:id="@+id/tv_carwindowstatus"
+                style="@style/DrawableText"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_window"
+                app:drawableStartCompat="@drawable/ic_carwindow" />
+
+            <TextView
+                android:id="@+id/tv_airconditionerstatus"
+                style="@style/DrawableText"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_hvac"
+                app:drawableStartCompat="@drawable/ic_air" />
+
+            <TextView
+                android:id="@+id/tv_carseatstatus"
+                style="@style/DrawableText"
+                android:layout_marginTop="10dp"
+                android:text="@string/device_seat"
+                app:drawableStartCompat="@drawable/ic_carseat" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

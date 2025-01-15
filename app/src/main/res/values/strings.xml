@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">RedfinDemo</string>
+
+    <string name="common_loading">正在加载中. . .</string>
+
+    <string name="dialog_confirm">确认</string>
+    <string name="dialog_cancel">取消</string>
+
+    <string name="device_android">Android %1$s</string>
+    <string name="device_baseinfo">基本信息</string>
+    <string name="device_raminfo">RAM free/total: %1$s/%2$s</string>
+    <string name="device_rominfo">ROM free/total: %1$s/%2$s</string>
+    <string name="device_buildnumber">Build Number %1$s</string>
+    <string name="device_hardwarestatus">硬件监测</string>
+    <string name="device_speaker">Speaker: %1$s</string>
+    <string name="device_camera">Camera: %1$s</string>
+    <string name="device_power">CarPower: %1$s</string>
+    <string name="device_window">Window: %1$s</string>
+    <string name="device_hvac">AirConditioner: %1$s</string>
+    <string name="device_seat">Seat: %1$s</string>
+
+    <string name="app_openapp">打开应用</string>
+    <string name="app_version">version: %1$s</string>
+    <string name="app_killprocess">KILL进程</string>
+    <string name="app_uninstall">卸载APP</string>
+    <string name="app_systemapp">系统应用</string>
+
+
+    <string name="debug_quickactions">快捷操作</string>
+    <string name="debug_reboot">重启</string>
+    <string name="debug_shutdown_notify">确认关闭设备？</string>
+    <string name="debug_reboot_notify">确认重启设备？</string>
+    <string name="debug_shutdown">关机</string>
+    <string name="debug_perfromance">性能监测</string>
+
+
+    <string name="performance_processid">进程号</string>
+    <string name="performance_packagename">包名</string>
+    <string name="performance_cpuindo">CPU占用</string>
+    <string name="performance_meminfo">内存占用</string>
+
+    <string name="signal_ac">空调服务</string>
+    <string name="signal_ac_onoff">空调开关</string>
+    <string name="signal_ac_cold">空调制冷</string>
+    <string name="signal_body">车身控制</string>
+    <string name="signal_ac_function">功能按钮</string>
+
+    <string name="file_title1">常用功能</string>
+    <string name="file_movelog_notify">将日志文件复制到sdcard内</string>
+    <string name="file_copylog">复制日志</string>
+    <string name="file_browse">文件浏览</string>
+</resources>
