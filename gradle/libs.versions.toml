@@ -17,7 +17,6 @@ material = "1.11.0"
 protobufJava = "3.22.3"
 redfincommonhelperVersion = "1.0"
 tencentLibpag = "4.3.51"
-vcoscommonwidgets = "1.0.1-20240517.120149-56"
 monitor = "1.6.1"
 coreKtx = "1.12.0"
 jcipAnnotations = "1.0"
@@ -40,7 +39,6 @@ tencent-mmkv = { module = "com.tencent:mmkv-static", version.ref = "comTencentMm
 leakcanary = { module = "com.squareup.leakcanary:leakcanary-android", version.ref = "leakcanary" }
 google-gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
 cymchad-BaseRecyclerViewAdapterHelper = { module = "io.github.cymchad:BaseRecyclerViewAdapterHelper", version.ref = "ioGithubCymchadBaserecyclerviewadapterhelper" }
-vcos-CommonWidgets = { module = "com.vcos.common.widgets:VcosCommonWidgets", version.ref = "vcoscommonwidgets" }
 androidx-monitor = { group = "androidx.test", name = "monitor", version.ref = "monitor" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 jcip-annotations = { group = "net.jcip", name = "jcip-annotations", version.ref = "jcipAnnotations" }
